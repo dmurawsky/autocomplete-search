@@ -3,9 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "fuse.js": "^3.4.6",
     "react": "^16.8.5",
     "react-dom": "^16.8.5",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "whatwg-fetch": "^3.0.0"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "trailingComma": "all",
+    "singleQuote": true
   },
   "scripts": {
     "start": "concurrently \"npm run start:server\" \"npm run start:dev-build\"",

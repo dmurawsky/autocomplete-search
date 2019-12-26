@@ -2,13 +2,22 @@ import React from 'react';
 
 import './AutocompleteApp.css';
 
-export default function AutocompleteApp() {
+const getResults = async (searchValue, updateResults) => {
+  if (searchValue === '') return updateResults(null)
+  const response = await fetch('/api/books?search=' + searchValue).then(res=>res.json())
+  updateResults(response.result)
+}
+
+const AutocompleteApp = () => {
+  const [results, updateResults] = React.useState(null)
   return (
     <form className="autocomplete-app">
-      <input type="text" autoFocus />
+      <input placeholder="Search Books" onChange={({target:{value}})=>getResults(value, updateResults)} type="text" autoFocus />
       <ul className="autocomplete-suggestions">
-        <li>Example suggestion.</li>
+        {results && results.map(result => <li key={result.id}>{result.title} - {result.attribution}</li>)}
       </ul>
     </form>
   );
 }
+
+export default AutocompleteApp
