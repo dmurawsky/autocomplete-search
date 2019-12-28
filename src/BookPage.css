@@ -1,0 +1,105 @@
+img {
+  width: 100%;
+  border: solid 1px #ddd;
+}
+
+#bookPage {
+  margin: 15px;
+}
+
+#backBtn {
+  margin-bottom: 10px;
+}
+
+.card {
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+.card img {
+  float: left;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 10px;
+}
+
+.card h1 {
+  font-size: 28px;
+  margin-bottom: 8px;
+}
+
+.card h1 .subtitle {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.card h1 .published {
+  font-size: 18px;
+  color: #888;
+}
+
+.card h1 .attribution {
+  font-size: 20px;
+  color: #555;
+}
+
+.card .price {
+  text-align: right;
+  font-size: 16px;
+  float: right;
+}
+
+.card .price small {
+  font-size: 14px;
+  color: #555;
+}
+
+.other-books {
+  padding: 5px;
+  display: inline-block;
+  width: 100%;
+  max-width: 300px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
+.other-books h1 {
+  font-size: 20px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.other-books .price {
+  float: right;
+}
+
+.other-books .attribution {
+  padding-right: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h3 {
+  font-size: 16px;
+  margin: 20px 0px 15px;
+}
+
+.card img {
+  float: left;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 10px;
+}
