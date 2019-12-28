@@ -1,10 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import 'whatwg-fetch'
-
+import 'whatwg-fetch';
 import './reset.css';
 import './index.css';
 
-import AutocompleteApp from './AutocompleteApp';
+import App from './App';
 
-ReactDOM.render(<AutocompleteApp />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
